@@ -19,6 +19,7 @@
         body {
             background: hsl(233, 47%, 7%);
             color: white;
+            margin: 0 auto;
         }
 
         h1,
@@ -33,50 +34,64 @@
         }
 
         p {
-            font-size: 15px;
+            font-size: 14px;
             text-align: center;
             color: hsla(0, 0%, 100%, 0.75);
             font-family: 'Inter', sans-serif;
+            line-height: 1.75;
+        }
+
+        .group p {
+            letter-spacing: 0.05rem;
         }
 
         .insights {
             color: hsl(277, 64%, 61%);
         }
 
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
         .container {
             /*border: solid 2px white;*/
             display: flex;
             flex-direction: column;
-            margin: 20% 5%;
+            margin: 25% 7.5%;
         }
 
         .container-image {
             display: flex;
-            flex-grow: 1;
+            position: relative;
+        }
+
+        img {
             width: 100%;
             border-radius: 2.5% 2.5% 0 0;
         }
 
+        .image-tint {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 2.5% 2.5% 0 0;
+            background-color: rgba(109, 6, 173, 0.55);
+        }
+
         .container-info {
             background: hsla(244, 38%, 16%);
-            flex-direction: column;
-            flex-grow: 2;
-            padding: 1.5em;
+            padding: 1em 2.5em;
             border-radius: 0 0 2.5% 2.5%;
         }
 
         .group {
-            margin: 5% 0px;
+            margin: 7.5% 0px;
+            padding-top: 20px;
         }
 
 
 
 
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
 
         .attribution a {
             color: hsl(277, 64%, 61%);
@@ -86,15 +101,17 @@
 
 <body>
     <div class="container">
-        <img class="container-image" src="images/image-header-desktop.jpg" alt="cheesy photo">
-
-        <div class="container-info">
+        <div class="container-image">
+            <img src="images/image-header-desktop.jpg" alt="cheesy photo">
+            <div class="image-tint"></div>
+        </div>
+        <article class="container-info">
             <h1>Get <span class="insights">insights</span> that help your business grow.</h1>
 
             <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
                 experience, and overall efficiency.</p>
 
-            <div class="perks">
+            <span class="perks">
                 <div class="group">
                     <h2>10k+</h2>
                     <p>COMPANIES</p>
@@ -107,10 +124,11 @@
                     <h2>12M+</h2>
                     <p>QUERIES</p>
                 </div>
-            </div>
+            </span>
+        </article>
 
-        </div>
     </div>
+
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="www.nevinedmundson.com">Nevin Edmundson</a>.
