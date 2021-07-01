@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        body {
+            background: hsl(233, 47%, 7%);
+            color: white;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h2,
+        p {
+            margin: 0;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: center;
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .insights {
+            color: hsl(277, 64%, 61%);
+        }
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .container {
+            /*border: solid 2px white;*/
+            display: flex;
+            flex-direction: column;
+            margin: 20% 5%;
+        }
+
+        .container-image {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            border-radius: 2.5% 2.5% 0 0;
+        }
+
+        .container-info {
+            background: hsla(244, 38%, 16%);
+            flex-direction: column;
+            flex-grow: 2;
+            padding: 1.5em;
+            border-radius: 0 0 2.5% 2.5%;
+        }
+
+        .group {
+            margin: 5% 0px;
+        }
+
+
+
+
+
+        .attribution a {
+            color: hsl(277, 64%, 61%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="container-image" src="images/image-header-desktop.jpg" alt="cheesy photo">
+
+        <div class="container-info">
+            <h1>Get <span class="insights">insights</span> that help your business grow.</h1>
+
+            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+                experience, and overall efficiency.</p>
+
+            <div class="perks">
+                <div class="group">
+                    <h2>10k+</h2>
+                    <p>COMPANIES</p>
+                </div>
+                <div class="group">
+                    <h2>314</h2>
+                    <p>TEMPLATES</p>
+                </div>
+                <div class="group">
+                    <h2>12M+</h2>
+                    <p>QUERIES</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="www.nevinedmundson.com">Nevin Edmundson</a>.
+    </div>
+</body>
+
+</html>
